@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>01-common-tags</title>
+</head>
+<body>
+  <!-- Раздел div -->
+  <!--Раздел нужен для выделения/обвертки/оформления разделов/блоков страницы -->
+  <!-- Блочный -->
+  <div>
+    Раздел
+  </div>
+  <div>Еще раздел</div>
+
+  <hr>
+
+  <!-- Заголовок h1-h6 -->
+  <!-- Заголовок нужен для обозначения названий разделов -->
+  <!-- Блочный -->
+  <h1>Заголовок h1</h1>
+  <h2>Заголовок h2</h2>
+  <h3>Заголовок h3</h3>
+  <h4>Заголовок h4</h4>
+  <h5>Заголовок h5</h5>
+  <h6>Заголовок h6</h6>
+
+  <hr>
+
+  <!-- Параграф p -->
+  <!-- Блок текста на странице -->
+  <!-- Блочный -->
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores non, qui libero accusantium in recusandae dignissimos? Id incidunt dolorum, laboriosam? Maiores veritatis pariatur, autem aliquid, provident enim amet possimus rem!</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quia ullam corrupti asperiores fugiat doloribus. Voluptatibus doloremque, dolorum hic perferendis in nostrum, debitis obcaecati quae, rem eius dolorem! Quisquam, provident.</p>
+  <p>Привет,</p>
+  <p>Мир!</p>
+
+  <hr>
+
+  <!-- Текст span -->
+  <!-- Текст на странице -->
+  <!-- Строчный -->
+  <span>Привет,</span>
+  <span>Мир!</span>
+
+  <hr>
+
+  <!-- Ссылка a -->
+  <!-- Ссылки на другие страницы, файлы -->
+  <!-- Строчный -->
+  <a href="tut.by">tut.by</a>
+  <a href="#">Купить</a>
+
+  <hr>
+
+  <!-- Картинка img -->
+  <!-- Картинки на странице -->
+  <!-- Строчный -->
+
+  <img src="./img/office-7.jpg" alt="Офис">
+  <img src="./img/office-7.jpg" alt="Офис" width="640">
+
+  <hr>
+
+  <!-- Упорядоченный список ol, элемент списка li -->
+  <!-- Составление упорядоченных списков -->
+  <!-- ol - блочный -->
+  <!-- li - блочный -->
+
+  <ol>
+    <li>Html</li>
+    <li>Css</li>
+    <li>JS</li>
+  </ol>
+  <ol>
+    <li><a href="#">Html</a></li>
+    <li><a href="#">Css</a></li>
+    <li><a href="#">JS</a></li>
+  </ol>
+
+  <hr>
+
+  <!-- Неупорядоченный (не нумерованный) список ul -->
+  <!-- Составление элементов в списках -->
+  <!-- Блочный -->
+
+  <ul>
+    <li>Html</li>
+    <li>Css</li>
+    <li>JS</li>
+  </ul>
+  <ul>
+    <li><a href="#">Html</a></li>
+    <li><a href="#">Css</a></li>
+    <li><a href="#">JS</a></li>
+  </ul>
+
+  <hr>
+
+  <!-- Таблица table -->
+  <!-- Шапка таблицы thead -->
+  <!-- Тело таблицы tbody -->
+  <!-- Ряд таблицы tr -->
+  <!-- Ячейка шапки таблицы th -->
+  <!-- Ячейка таблицы td -->
+  <!-- Информация в табличном виде -->
+  <!-- Табличный блок -->
+
+  <table>
+    <thead>
+      <tr>
+        <th>№ п/п</th>  
+        <th>Тема</th>
+        <th>Часы</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Html</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>CSS</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Template</td>
+        <td>4</td>
+      </tr>      
+    </tbody>
+  </table>
+
+  <hr>
+
+  <!-- Форма form -->
+  <!-- Поле ввода <input type="text"> -->
+  <!-- Кнопка <input type="button"> -->
+  <!-- form - блочный -->
+  <!-- input - строчно-блочный -->
+
+  <form action="/" method="GET">
+    <input type="text">
+    <input type="text">
+    <input type="submit">
+  </form>
+
+  <hr>
+
+  <!-- Шапка страницы header -->
+  <!--
+    Раздел шапки страницы содержит с основном логотип, меню.
+    Расположен в самом верху страницы.
+  -->
+  <!-- Блочный -->
+
+  <header>Header</header>
+
+  <hr>
+
+  <!-- Основной раздел страницы main -->
+  <!-- Раздел содержит основной контент страницы -->
+  <!-- Блочный -->
+
+  <main>Main</main>
+
+  <hr>
+
+  <!-- Подвал страницы footer-->
+  <!-- 
+    Распологается в самом низу страницы.
+    Содержит коммерческую, справочную, правовую информацию, логотипы, меню.
+  -->
+  <!-- Блочный -->
+
+  <footer>Footer</footer>
+
+  <hr>
+
+  <!-- Секция section -->
+  <!--
+  Секция выделяет компонент страницы: слайдер, информационные блоги, галлереи, информация о компании, информация о клиентах.
+  -->
+  <!-- Блочный -->
+
+  <section>Section</section>
+
+  <hr>
+
+  <!-- Пример разметки основных компонентов сайта -->
+  <header class="header">Header</header>
+  <main class="main">
+    <section class="slider">Slider</section>
+    <section class="about-us">About us</section>
+    <section class="projects">Information aboout projects</section>
+    <section class="clients">Clints</section>
+  </main>
+  <footer>Footer</footer>
+
+</body>
+</html>
