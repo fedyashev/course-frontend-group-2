@@ -1,0 +1,96 @@
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: #8BC34A;
+}
+
+.header .container {
+  display: block;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.menu {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu--item {
+  margin: 0 2rem;
+}
+
+.menu--item:first-child {
+  margin-left: 0;
+}
+
+.menu--item:last-child {
+  margin-right: 0;
+}
+
+.menu--link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: small;
+  color: #212121;
+}
+
+.main {
+  flex: 1;
+  background: #F1F8E9;
+}
+
+.footer {
+  background: #8BC34A;
+}
+
+.footer .container {
+  display: block;
+}
+
+.footer--rights p {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: small;
+  color: #212121;
+}
+
+.container {
+  width: 768px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  flex: 0 0 30%;
+}
