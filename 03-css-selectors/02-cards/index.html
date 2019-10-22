@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>02-cards</title>
+
+    <style>
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            width: 768px;
+            margin: 0 auto;
+        }
+
+        .numbers {}
+
+        .numbers--title {
+            font-weight: bold;
+        }
+
+        .numbers--container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .number {
+            border: 1px solid #212121;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+
+        .number--value {
+            font-size: xx-large;
+            font-weight: bold;
+            color: green;
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+
+        .number--text {
+            font-size: x-small;
+        }
+
+        .services {
+            background: #e8ebf1;
+        }
+
+        .services--container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .services--card {}
+
+        .services--name {
+            text-transform: uppercase;
+        }
+
+        .services--text {
+            font-size: small;
+            line-height: 1.7;
+            color: #363636;
+        }
+
+        .services--button {
+            text-decoration: none;
+            color: #51b5ce;
+            font-size: small;
+        }
+
+        .services .container {}
+
+        .card {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="numbers">
+        <div class="container">
+            <h2 class="numbers--title">Цифры и факты</h2>
+            <div class="numbers--container">
+                <div class="number">
+                    <p class="number--value">6+</p>
+                    <p class="number--text">Лет на рынке</p>
+                </div>
+                <div class="number">
+                    <p class="number--value">6+</p>
+                    <p class="number--text">Лет на рынке</p>
+                </div>
+                <div class="number">
+                    <p class="number--value">6+</p>
+                    <p class="number--text">Лет на рынке</p>
+                </div>
+                <div class="number">
+                    <p class="number--value">6+</p>
+                    <p class="number--text">Лет на рынке</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <div class="services--container">
+                <div class="services--card">
+                    <h3 class="services--name">Service 1</h3>
+                    <p class="services--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cumque
+                        voluptate atque harum fugit ullam eveniet consequatur, consectetur iure nobis aspernatur sint
+                        necessitatibus eos molestias? Amet molestiae officia modi nihil.</p>
+                    <a href="#" class="services--button">Read More</a>
+                </div>
+                <div class="services--card">
+                    <h3 class="services--name">Service 1</h3>
+                    <p class="services--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cumque
+                        voluptate atque harum fugit ullam eveniet consequatur, consectetur iure nobis aspernatur sint
+                        necessitatibus eos molestias? Amet molestiae officia modi nihil.</p>
+                    <a href="#" class="services--button">Read More</a>
+                </div>
+                <div class="services--card">
+                    <h3 class="services--name">Service 1</h3>
+                    <p class="services--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cumque
+                        voluptate atque harum fugit ullam eveniet consequatur, consectetur iure nobis aspernatur sint
+                        necessitatibus eos molestias? Amet molestiae officia modi nihil.</p>
+                    <a href="#" class="services--button">Read More</a>
+                </div>
+                <div class="services--card">
+                    <h3 class="services--name">Service 1</h3>
+                    <p class="services--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cumque
+                        voluptate atque harum fugit ullam eveniet consequatur, consectetur iure nobis aspernatur sint
+                        necessitatibus eos molestias? Amet molestiae officia modi nihil.</p>
+                    <a href="#" class="services--button">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="border">
+        <div class="container">
+            <div class="container">
+                <div class="card">
+                    <img src="../../00-cards/card-01.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
