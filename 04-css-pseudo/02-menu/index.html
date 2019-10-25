@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 768px;
+            margin: 0 auto;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {}
+
+        .logo--title {}
+
+        .menu {
+            width: 500px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu--item {}
+
+        .menu--link {}
+
+        .menu--link:visited {
+            color: brown;
+        }
+
+        .menu--link:active {
+            color: #F00;
+        }
+
+        .menu--link:hover {
+            color: #0F0;
+        }
+
+        .menu--item:first-child {
+            background: #F0F;
+        }
+
+        .menu--item:last-child {
+            background: #0FF;
+        }
+
+        .menu--item:nth-child(3) {
+            background: #999;
+        }
+
+        /* HEADER */
+
+        /* END HEADER */
+
+        /* SERVICES */
+
+        .service--card {
+            border: 1px solid #000;            
+            border-bottom: 1px solid #900;
+            margin-left: 1.25rem;
+            margin-right: 1.25rem;
+        }
+
+        .service--card:first-child {
+            margin-left: 0;
+        }
+
+        .service--card:last-child {
+            margin-right: 0;
+        }
+
+        .services--container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .service--icon {
+            background: #2aacc8;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* END SERVICES */
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navigation">
+                <div class="logo">
+                    <h1 class="logo--title">Logo</h1>
+                </div>
+                <ul class="menu">
+                    <li class="menu--item"><a href="#" class="menu--link">Home</a></li>
+                    <li class="menu--item"><a href="#" class="menu--link">Projects</a></li>
+                    <li class="menu--item"><a href="#" class="menu--link">About us</a></li>
+                    <li class="menu--item"><a href="#" class="menu--link">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="services">
+        <div class="container">
+            <div class="services--container">
+                <div class="service--card">
+                    <h3 class="service--title">
+                        <div class="service--icon">
+                            <img src="./img/pen.png" alt="">
+                        </div>
+                        <span>Service 1</span>
+                    </h3>
+                    <p class="service--text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia non repellat
+                        porro mollitia aperiam quisquam veniam fuga molestias veritatis itaque sunt, voluptatum atque
+                        ipsum at repudiandae quod facere, dolor eos.</p>
+                    <a href="#" class="service--link">
+                        <img src="./img/arrow.png" alt="">
+                        <span>Read more</span>
+                    </a>
+                </div>
+                <div class="service--card">
+                    <h3 class="service--title">
+                        <div class="service--icon">
+                            <img src="" alt="">
+                        </div>
+                        <span>Service 1</span>
+                    </h3>
+                    <p class="service--text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia non repellat
+                        porro mollitia aperiam quisquam veniam fuga molestias veritatis itaque sunt, voluptatum atque
+                        ipsum at repudiandae quod facere, dolor eos.</p>
+                    <a href="#" class="service--link">
+                        <img src="./img/arrow.png" alt="">
+                        <span>Read more</span>
+                    </a>
+                </div>
+                <div class="service--card">
+                    <h3 class="service--title">
+                        <div class="service--icon">
+                            <img src="" alt="">
+                        </div>
+                        <span>Service 1</span>
+                    </h3>
+                    <p class="service--text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia non repellat
+                        porro mollitia aperiam quisquam veniam fuga molestias veritatis itaque sunt, voluptatum atque
+                        ipsum at repudiandae quod facere, dolor eos.</p>
+                    <a href="#" class="service--link">
+                        <img src="./img/arrow.png" alt="">
+                        <span>Read more</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
