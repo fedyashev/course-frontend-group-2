@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Position</title>
+
+    <style>
+        .relative {
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            width: 576px;
+            height: 4rem;
+            margin: 0 auto;
+            background: #212121;
+            border-radius: 0.5rem;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .box {
+            width: 2rem;
+            height: 2rem;
+            background: blue;
+            border-radius: 0.5rem;
+        }
+
+        .box__red {
+            background: red;
+            position: relative;
+            top: 1rem;
+            left: 1rem;
+        }
+
+        .absolute .container {
+            position: relative;
+        }
+
+        .absolute .box__red {
+            position: absolute;
+            left: -2.5rem;
+            background: green;
+        }
+
+        .fixed .box__red {
+            position: fixed;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background: purple;
+            top: auto;
+            bottom: 1rem;
+            left: auto;
+            right: 1rem;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0px;
+            background: orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="sticky">
+        <div class="container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </section>
+
+    <section class="relative">
+        <div class="container">
+            <div class="box"></div>
+            <div class="box box__red"></div>
+            <div class="box"></div>
+        </div>
+    </section>
+
+    <section class="absolute">
+        <div class="container">
+            <div class="box"></div>
+            <div class="box box__red"></div>
+            <div class="box"></div>
+        </div>
+    </section>
+
+    <section class="relative">
+        <div class="container">
+            <div class="box"></div>
+            <div class="box box__red"></div>
+            <div class="box"></div>
+        </div>
+    </section>
+
+    <section class="absolute">
+        <div class="container">
+            <div class="box"></div>
+            <div class="box box__red"></div>
+            <div class="box"></div>
+        </div>
+    </section>
+
+    <section class="relative">
+        <div class="container">
+            <div class="box"></div>
+            <div class="box box__red"></div>
+            <div class="box"></div>
+        </div>
+    </section>
+
+    <section class="absolute">
+        <div class="container">
+            <div class="box"></div>
+            <div class="box box__red"></div>
+            <div class="box"></div>
+        </div>
+    </section>
+
+    <section class="relative">
+        <div class="container">
+            <div class="box"></div>
+            <div class="box box__red"></div>
+            <div class="box"></div>
+        </div>
+    </section>
+
+    <section class="absolute">
+        <div class="container">
+            <div class="box"></div>
+            <div class="box box__red"></div>
+            <div class="box"></div>
+        </div>
+    </section>
+
+    <section class="relative">
+        <div class="container">
+            <div class="box"></div>
+            <div class="box box__red"></div>
+            <div class="box"></div>
+        </div>
+    </section>
+
+    <section class="absolute">
+        <div class="container">
+            <div class="box"></div>
+            <div class="box box__red"></div>
+            <div class="box"></div>
+        </div>
+    </section>
+
+    <section class="relative">
+        <div class="container">
+            <div class="box"></div>
+            <div class="box box__red"></div>
+            <div class="box"></div>
+        </div>
+    </section>
+
+    <section class="absolute">
+        <div class="container">
+            <div class="box"></div>
+            <div class="box box__red"></div>
+            <div class="box"></div>
+        </div>
+    </section>
+
+    <section class="fixed">
+        <div class="box__red"></div>
+    </section>
+</body>
+
+</html>

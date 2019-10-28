@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 768px;
+            margin: 0 auto;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu {
+            width: 500px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu--item::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 0.5rem;
+            background: green;
+            position: absolute;
+            bottom: 100%;
+        }
+
+
+
+        .menu--item:hover {
+            background: #212121;
+        }
+
+        .menu--item:hover .menu--link {
+            color: orange;
+        }
+
+        .menu--item:hover .submenu {
+            display: block;
+        }
+
+        .submenu {
+            display: none;
+            background: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navigation">
+                <h1 class="logo">logo</h1>
+                <ul class="menu">
+                    <li class="menu--item"><a href="#" class="menu--link">Home</a></li>
+                    <li class="menu--item">
+                        <a href="#" class="menu--link">News</a>
+                        <ul class="submenu">
+                            <li class="submenu--item"><a href="#" class="submenu--link">Football</a></li>
+                            <li class="submenu--item"><a href="#" class="submenu--link">Swimming</a></li>
+                            <li class="submenu--item"><a href="#" class="submenu--link">Tennis</a></li>
+                            <li class="submenu--item"><a href="#" class="submenu--link">Running</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu--item"><a href="#" class="menu--link">About us</a></li>
+                    <li class="menu--item"><a href="#" class="menu--link">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="slider">
+        <div class="slider--frame">
+            <div class="slide">
+                <div class="slide--image">
+                    <img src="" alt="">
+                </div>
+                <div class="slide--links">
+                    <a href=""></a>
+                    <a href=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
