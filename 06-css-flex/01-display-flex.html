@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>01-display-flex</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: #EEE;
+    }
+    pre {
+      margin: 0;
+      padding: 0.25rem;
+    }
+    h3, p {
+      margin: 0;
+    }
+    h1 {
+      text-align: center;
+    }
+    .container {
+      width: 768px;
+      margin: 20px auto;
+    }
+    .code {
+      color: #ccff90;
+    }
+    .code > *:nth-child(even) {
+      background: #455a64;
+    }
+    .code > *:nth-child(odd) {
+      background: #37474f;
+    }
+    .code pre b {
+      color: #ff9800;
+    }
+    .code-html::before {
+      content: "HTML";
+      display: block;
+      color: #000;
+      background: #9fa8da;
+    }
+    .code-css::before {
+      content: "CSS";
+      display: block;
+      color: #000;
+      background: #eeff41;
+    }
+    .code-inline {
+      background: #90caf9;
+      padding: 0px 5px;
+      /*color: #FFF;*/
+    }
+    .container .menu {
+      background: #AAA;
+    }
+    .description-list {
+      margin: 0;
+      margin-bottom: 0.25rem;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="container">
+    <h1>Расположение элементов списка меню в один ряд с помощью flex контейнера</h1>
+  </div>
+
+  <div class="container">
+    <code class="code code-html">
+      <pre>&lt;div class="container"&gt;</pre>
+      <pre>  &lt;ul class="menu"&gt;</pre>
+      <pre>    &lt;li class="menu-item"&gt;&lt;a href="" class="menu-link"&gt;Главная&lt;/a&gt;&lt;/li&gt;</pre>
+      <pre>    &lt;li class="menu-item"&gt;&lt;a href="" class="menu-link"&gt;Новости&lt;/a&gt;&lt;/li&gt;</pre>
+      <pre>    &lt;li class="menu-item"&gt;&lt;a href="" class="menu-link"&gt;О нас&lt;/a&gt;&lt;/li&gt;</pre>
+      <pre>    &lt;li class="menu-item"&gt;&lt;a href="" class="menu-link"&gt;Контакты&lt;/a&gt;&lt;/li&gt;</pre>
+      <pre>  &lt;/ul&gt;</pre>
+      <pre>&lt;/div&gt;</pre>
+    </code>
+  </div>
+
+  <div class="container">
+    <ul class="menu">
+      <li class="menu-item"><a href="" class="menu-link">Главная</a></li>
+      <li class="menu-item"><a href="" class="menu-link">Новости</a></li>
+      <li class="menu-item"><a href="" class="menu-link">О нас</a></li>
+      <li class="menu-item"><a href="" class="menu-link">Контакты</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <h3>Шаг 1</h3>
+    <ul class="description-list">
+      <li><p>Уберем внутренний отступ слева у списка <code class="code-inline">padding-left: 0px;</code></p></li>
+      <li><p>Уберем точки напротив элементов списка <code class="code-inline">list-style: none;</code></p></li>
+    </ul>
+    <code class="code code-css">
+      <pre>.menu {</pre>
+      <pre><b>  padding-left: 0px;</b></pre>
+      <pre><b>  list-style: none;</b></pre>
+      <pre>}</pre>
+    </code>
+  </div>
+
+  <style>
+    .menu.step-1 {
+      list-style: none;
+      padding-left: 0px;
+    }
+  </style>
+
+  <div class="container">
+    <ul class="menu step-1">
+      <li class="menu-item"><a href="" class="menu-link">Главная</a></li>
+      <li class="menu-item"><a href="" class="menu-link">Новости</a></li>
+      <li class="menu-item"><a href="" class="menu-link">О нас</a></li>
+      <li class="menu-item"><a href="" class="menu-link">Контакты</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <h3>Шаг 2</h3>
+    <ul class="description-list">
+      <li><p>Уберем подчеркивание у ссылок <code class="code-inline">text-decoration: none;</code></p></li>
+      <li><p>Установим черный цвет текста ссылок <code class="code-inline">color: #000;</code></p></li>
+    </ul>
+    <code class="code code-css">
+      <pre>.menu-link {</pre>
+      <pre><b>  text-decoration: none;</b></pre>
+      <pre><b>  color: #000;</b></pre>
+      <pre>}</pre>
+    </code>
+  </div>
+
+  <style>
+    .menu-link.step-2 {
+      text-decoration: none;
+      color: #000;
+    }
+  </style>
+
+
+  <div class="container">
+    <ul class="menu step-1">
+      <li class="menu-item"><a href="" class="menu-link step-2">Главная</a></li>
+      <li class="menu-item"><a href="" class="menu-link step-2">Новости</a></li>
+      <li class="menu-item"><a href="" class="menu-link step-2">О нас</a></li>
+      <li class="menu-item"><a href="" class="menu-link step-2">Контакты</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <h3>Шаг 3</h3>
+    <ul class="description-list">
+      <li><p>Список меню с классом <code>.menu</code> сделаем flex контейнером <code class="code-inline">display: flex;</code></p></li>
+    </ul>
+    <code class="code code-css">
+      <pre>.menu {</pre>
+      <pre>  padding-left: 0px;</pre>
+      <pre>  list-style: none;</pre>
+      <pre><b>  display: flex;</b></pre>
+      <pre>}</pre>
+    </code>
+  </div>
+
+  <style>
+    .menu.step-3 {
+      display: flex;
+    }
+  </style>
+
+  <div class="container">
+    <ul class="menu step-1 step-3">
+      <li class="menu-item"><a href="" class="menu-link step-2">Главная</a></li>
+      <li class="menu-item"><a href="" class="menu-link step-2">Новости</a></li>
+      <li class="menu-item"><a href="" class="menu-link step-2">О нас</a></li>
+      <li class="menu-item"><a href="" class="menu-link step-2">Контакты</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <h3>Шаг 4</h3>
+    <ul class="description-list">
+      <li><p>Распределим элементы списка равномерно по flex контейнеру <code class="code-inline">justify-content: space-around;</code></p></li>
+    </ul>
+    <code class="code code-css">
+      <pre>.menu {</pre>
+      <pre>  padding-left: 0px;</pre>
+      <pre>  list-style: none;</pre>
+      <pre>  display: flex;</pre>
+      <pre><b>  justify-content: space-around;</b></pre>
+      <pre>}</pre>
+    </code>
+  </div>
+
+  <style>
+    .menu.step-4 {
+      justify-content: space-around;
+    }
+  </style>
+
+  <div class="container">
+    <ul class="menu step-1 step-3 step-4">
+      <li class="menu-item"><a href="" class="menu-link step-2">Главная</a></li>
+      <li class="menu-item"><a href="" class="menu-link step-2">Новости</a></li>
+      <li class="menu-item"><a href="" class="menu-link step-2">О нас</a></li>
+      <li class="menu-item"><a href="" class="menu-link step-2">Контакты</a></li>
+    </ul>
+  </div>
+
+</body>
+</html>

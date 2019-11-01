@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    width: 768px;
+    height: 10rem;
+    margin: 0 auto;
+    background: #AAA;
+    border: 1px solid #333;
+    border-radius: 0.5rem;    
+}
+
+.box {
+    width: 5rem;
+    height: 5rem;
+    background: orange;
+    border: 1px solid orangered;
+    border-radius: 0.5rem;
+}
+
+.flex-2 .container {
+    justify-content: space-between;
+}
+
+.flex-3 .container {
+    align-items: flex-start;
+}
+
+.flex-4 .container {
+    flex-direction: column-reverse;
+}
+
+.flex-5 .container {
+    flex-wrap: wrap;
+}
+
+.flex-5 .box {
+    flex: 0 0 auto;
+}
+
+.flex-6 .box:nth-child(odd) {
+    flex: 2;
+}
+
+.flex-6 .box:nth-child(even) {
+    flex: 1;
+}
+
+.flex-7 .continer {
+    flex-wrap: wrap;
+    columns: 3;
+}
+
+.flex-7 .box-flex-3 {
+    flex: 3;
+}
+
+.flex-7 .box-flex-4 {
+    flex: 4;
+}
+
+.flex-7 .box-flex-5 {
+    flex: 5;
+}
+
+.flex-7 .box-flex-7 {
+    flex: 7;
+}
